@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: #1ad9a0;
+}
+
+#navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+#navbar a:hover {
+  background: #00abe5;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 100vh auto 300px 100px;
+}
+
+#welcome-section {
+  text-align: center;
+  background: #a8ffe5;
+  padding-top: 20vh;
+  font-family: brush script mt;
+  padding-bottom: 30vh;
+}
+
+#projects {
+  text-align: center;
+  background: white;
+}
+
+#profile {
+  text-align: center;
+  background: #a8ffe5;
+  display: grid;
+  grid-template-columns: 3fr;
+  
+}
+
+#profile-link {
+  text-decoration: none;
+  background: #a8ffe5;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#copyright {
+  text-align: center;
+  background: #1ad9a0;
+  padding: 1em;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.project-tile {
+  background: white;
+  padding: 2em;
+}
+
+.project-tile a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 800px) {
+  #navbar {
+    justify-content: space-around;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #navbar {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  #navbar a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #navbar a:last-of-type {
+    border-bottom: none;
+  }
+
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}
+
+.box{
+  width         : 360px;
+  height        : 430px;
+  background      : rgba(0, 0, 0, 0.4);
+  padding       : 20px;
+  text-align      :center;
+  margin        : auto;
+  margin-top      : 5%;
+  color         : white;
+  font-family     : 'Century Gothic',sans-serif;
+}
+
+.box p{
+  text-align: center;
+}
+.box-img{
+  border-radius     : 50%;
+  width         : 170px;
+  height        : 170px;
+  margin-bottom     : -80px;
+  margin-top      : 10px;
+}
+
+.box h1{
+  font-size       : 30px;
+  letter-spacing    : 4px;
+  font-weight     : 100;
+  margin-top      : 110px;
+  text-align:     center;
+}
+
+.box h5{
+  font-size       : 20px;
+  letter-spacing    : 3px;
+  font-weight     : 100;
+}
+
+.box p{
+  text-align      : center;
+  margin-right      : 30px;
+  color         : white;
+  font-family     : 'Century Gothic',sans-serif;
+}
+
+ul{
+  margin        : 0;
+  padding       : 0;
+}
+
+.box li{
+  display       : inline-block;
+  margin        : 6px;
+  list-style      : none;
+}
+
+.box li a{
+  color         : white;
+  text-decoration   : none;
+  font-size       : 60px;
+  transition      : all ease-in-out 250ms;
+}
+
+.box li a:hover{
+  color         : #b9b9b9;
+}
+
+.button {
+  background-color: #1ad9a0;
+  border: none;
+  color: white;
+  padding: 1px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
